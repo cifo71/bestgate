@@ -1,0 +1,2 @@
+# bestgate
+www.bestgate.sk
