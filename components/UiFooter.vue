@@ -5,7 +5,7 @@
 
 			<div class="footer-left">
 
-				<h3>Best<span>gate</span>.sk</h3>
+				<h3>Best<span>gate</span></h3>
 
 				<p class="footer-links">
 				  <router-link :to="{ name: 'domov' }">Domov</router-link> 
@@ -41,6 +41,14 @@
 					<span>O nás</span>
 					Ponúkame veľký sortiment vysokokvalitných výrobkov zo železa. Kontaktujte nás pre viac informácií.
 				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+
+
+				</div>
+
 			</div>
 
 		</footer>
