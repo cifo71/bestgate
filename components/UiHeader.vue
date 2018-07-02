@@ -1,13 +1,13 @@
 <template>
     <header class="header">
-      <router-link :to="{ name: 'Domov' }">
-        <img src="@/assets/img/logo.png" />
+      <router-link :to="{ name: 'domov' }">
+        <h3>www.bestgate.sk</h3>
       </router-link>
       <nav>
-        <router-link :to="{ name: 'Domov' }">Domov</router-link> 
-        <router-link :to="{ name: 'O-nas' }">O nás</router-link> 
-        <router-link :to="{ name: 'Produkty' }">Produkty</router-link> 
-        <router-link :to="{ name: 'Kontaktujte-nas' }">Kontaktujte nás</router-link>
+        <router-link :to="{ name: 'domov' }">Domov</router-link> 
+        <router-link :to="{ name: 'o-nas' }">O nás</router-link> 
+        <router-link :to="{ name: 'produkty' }">Produkty</router-link> 
+        <router-link :to="{ name: 'kontaktujte-nas' }">Kontaktujte nás</router-link>
       </nav>
     </header>
 </template>
@@ -28,6 +28,10 @@
   position:        fixed;
   top:             0;
   left:            0;
+
+  h3 {
+    color: white;
+  }
 
   img {
     max-width: 100px;

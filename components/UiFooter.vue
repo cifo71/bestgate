@@ -8,13 +8,13 @@
 				<h3>Best<span>gate</span>.sk</h3>
 
 				<p class="footer-links">
-				  <router-link :to="{ name: 'Domov' }">Domov</router-link> 
+				  <router-link :to="{ name: 'domov' }">Domov</router-link> 
 					·
-					<router-link :to="{ name: 'O-nas' }">O nás</router-link> 
+					<router-link :to="{ name: 'o-nas' }">O nás</router-link> 
 					·
-					<router-link :to="{ name: 'Produkty' }">Produkty</router-link> 
+					<router-link :to="{ name: 'produkty' }">Produkty</router-link> 
 					·
-					<router-link :to="{ name: 'Kontaktujte-nas' }">Kontaktujte nás</router-link>
+					<router-link :to="{ name: 'kontaktujte-nas' }">Kontaktujte nás</router-link>
 				</p>
 				<p class="footer-company-name">Copyright &copy; 2018 www.bestgate.sk</p>
 			</div>
@@ -57,7 +57,6 @@
 	text-align: left;
 	font: bold 16px sans-serif;
   position: fixed;
-  left: 0;
   bottom: 0;
 	padding: 55px 50px;
 	margin-top: 80px;
