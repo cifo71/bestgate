@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+        <header class="header">
       <router-link :to="{ name: 'domov' }">
         <h3>www.bestgate.sk</h3>
       </router-link>
@@ -12,6 +12,10 @@
     </header>
 </template>
 
+<script>
+
+</script>
+
 <style lang="scss">
 @import "~@/assets/scss/reset";
 @import "~@/assets/scss/variables";
@@ -19,7 +23,7 @@
 
 .header {
   width:           100%;
-  height:          80px;
+  height:          40px;
   background:      #2C3E50;
   padding:         0 40px;
   display:         flex;
@@ -59,5 +63,4 @@
     }
   }
 }
-
 </style>

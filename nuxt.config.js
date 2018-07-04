@@ -1,7 +1,6 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
+
+    
   head: {
     title: 'bestgate.sk',
     meta: [
@@ -10,7 +9,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'www.bestgate.sk ' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons' }
     ]
   },
   /*

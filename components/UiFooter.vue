@@ -39,7 +39,7 @@
 			<div class="footer-right">
 				<p class="footer-company-about">
 					<span>O nás</span>
-					Ponúkame veľký sortiment vysokokvalitných výrobkov zo železa. Kontaktujte nás pre viac informácií.
+					Ponúkame široký sortiment vysokokvalitných výrobkov zo železa. Kontaktujte nás pre viac informácií.
 				</p>
 
 				<div class="footer-icons">
@@ -64,8 +64,8 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-  position: fixed;
-  bottom: 0;
+	position: fixed;
+	bottom: 0;
 	padding: 55px 50px;
 	margin-top: 80px;
 }
@@ -210,6 +210,8 @@
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
+		position: relative;
+		bottom: 0;
 	}
 
 	.footer-distributed .footer-left,
