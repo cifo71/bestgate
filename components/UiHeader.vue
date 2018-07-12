@@ -1,5 +1,5 @@
 <template>
-        <header class="header">
+      <header class="header">
       <router-link :to="{ name: 'domov' }">
         <h3>www.bestgate.sk</h3>
       </router-link>
@@ -24,7 +24,7 @@
 .header {
   width:           100%;
   height:          40px;
-  background:      #2C3E50;
+  background:      #292C2F;
   padding:         0 40px;
   display:         flex;
   align-items:     center;
@@ -32,19 +32,17 @@
   position:        fixed;
   top:             0;
   left:            0;
+  position:        relative;
+  
 
   h3 {
     color: white;
   }
 
-  img {
-    max-width: 100px;
-  }
-
   nav {
     display: none;
     @include media(md) {
-      display: flex;
+    display: flex;
     }
     
     a {

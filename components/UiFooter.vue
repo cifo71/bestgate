@@ -64,8 +64,6 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	position: fixed;
-	bottom: 0;
 	padding: 55px 50px;
 	margin-top: 80px;
 }
@@ -210,8 +208,7 @@
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
-		position: relative;
-		bottom: 0;
+		
 	}
 
 	.footer-distributed .footer-left,
