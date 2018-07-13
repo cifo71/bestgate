@@ -14,7 +14,6 @@
     </ui-layout>
     </ui-layout>
     </div>
-   
   <ui-footer/>   
   </div>
 </template>
@@ -33,15 +32,12 @@ export default {
     UiFooter
   }
 }
-
 </script>
 
 <style lang="scss">
 @import "~@/assets/scss/reset";
 @import "~@/assets/scss/variables";
 @import "~@/assets/scss/mixins";
-
-
 
 .body {
   min-height: calc(100vh - 42px);
@@ -86,7 +82,6 @@ export default {
   text-decoration: none;
   padding: 10px 30px;
   margin: 45px;
-  
 }
 
 .button--white:hover {
@@ -95,6 +90,4 @@ export default {
   border-radius: 4px;
   border: 1px solid white;
 }
-
-
 </style>

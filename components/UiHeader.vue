@@ -1,33 +1,28 @@
 <template>
 <div>
 <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
-      <header class="header">
-          <ui-layout class="col-xs-12" justifyStart>
-              <router-link :to="{ name: 'index' }">
-        <h3>www.bestgate.sk</h3>
-      </router-link>
-      <ui-layout justifyEnd>
-    
+  <header class="header">
+    <ui-layout class="col-xs-12" justifyStart>
+      <router-link :to="{ name: 'index' }"><h3>www.bestgate.sk</h3></router-link>   
+    <ui-layout justifyEnd>
      <div class="header-info">
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<span>Horná Krupá,</span> Slovensko
+					Horná Krupá, Slovensko
 					<i class="fa fa-phone"></i>
 					+1 555 123456
 					<i class="fa fa-envelope"></i>
-					<a href="mailto:info@bestgate.sk">info@bestgate.sk</a>
+					info@bestgate.sk
 				</div>
 			</div>
-          </ui-layout>
-          </ui-layout>
-    </header>
+    </ui-layout>
+    </ui-layout>
+  </header>
 </div>
 </template>
 
 <script>
-
 import UiLayout from '~/components/UiLayout.vue'
-
 
 export default {
   components: {
@@ -62,5 +57,4 @@ h3 {
   font-size: 25px;
   padding: 9px;
 }
-
 </style>
