@@ -8,7 +8,7 @@
 				<h3>Best<span>gate</span></h3>
 
 				<p class="footer-links">
-				  <router-link :to="{ name: 'domov' }">Domov</router-link> 
+				  <router-link :to="{ name: 'index' }">Domov</router-link> 
 					·
 					<router-link :to="{ name: 'o-nas' }">O nás</router-link> 
 					·

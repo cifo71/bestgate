@@ -1,19 +1,39 @@
 <template>
+<div>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
       <header class="header">
-      <router-link :to="{ name: 'domov' }">
+          <ui-layout class="col-xs-12" justifyStart>
+              <router-link :to="{ name: 'index' }">
         <h3>www.bestgate.sk</h3>
       </router-link>
-      <nav>
-        <router-link :to="{ name: 'domov' }">Domov</router-link> 
-        <router-link :to="{ name: 'o-nas' }">O nás</router-link> 
-        <router-link :to="{ name: 'produkty' }">Produkty</router-link> 
-        <router-link :to="{ name: 'kontaktujte-nas' }">Kontaktujte nás</router-link>
-      </nav>
+      <ui-layout justifyEnd>
+    
+     <div class="header-info">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<span>Horná Krupá,</span> Slovensko
+					<i class="fa fa-phone"></i>
+					+1 555 123456
+					<i class="fa fa-envelope"></i>
+					<a href="mailto:info@bestgate.sk">info@bestgate.sk</a>
+				</div>
+			</div>
+          </ui-layout>
+          </ui-layout>
     </header>
+</div>
 </template>
 
 <script>
 
+import UiLayout from '~/components/UiLayout.vue'
+
+
+export default {
+  components: {
+    UiLayout
+  }
+}
 </script>
 
 <style lang="scss">
@@ -22,43 +42,25 @@
 @import "~@/assets/scss/mixins";
 
 .header {
-  width:           100%;
-  height:          40px;
-  background:      #292C2F;
-  padding:         0 40px;
-  display:         flex;
-  align-items:     center;
-  justify-content: space-between;
-  position:        fixed;
-  top:             0;
-  left:            0;
-  position:        relative;
-  
-
-  h3 {
-    color: white;
-  }
-
-  nav {
-    display: none;
-    @include media(md) {
-    display: flex;
-    }
-    
-    a {
-      padding:   12px;
-      color:     $accent;
-      font-size: 18px;
-      display:   block;
-
-      &:not(:last-of-type) {
-        margin-right: 60px;
-      }
-      
-      &:hover {
-        color: $primary;
-      }
-    }
-  }
+  width: 100%;
+  height: 42px;
 }
+  
+.header-info i {
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+  margin: 3px;
+}
+
+h3 {
+  font-size: 25px;
+  padding: 9px;
+}
+
 </style>

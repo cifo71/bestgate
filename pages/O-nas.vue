@@ -1,9 +1,7 @@
 <template>
     <div>
-        <ui-header/>
+        <ui-menu/>
             <ui-layout container>
-                <ui-layout class="col-xs-6 col-md-3"></ui-layout>
-                <ui-layout class="col-xs-6 col-md-3"></ui-layout>
             </ui-layout>
         <ui-footer/>   
     </div> 
@@ -11,12 +9,14 @@
 
 <script>
 import UiHeader from '~/components/UiHeader.vue'
+import UiMenu from '~/components/UiMenu.vue'
 import UiFooter from '~/components/UiFooter.vue'
 
 export default {
   components: {
     UiHeader,
-    UiFooter
+    UiFooter,
+    UiMenu
   }
 }
 

@@ -7,10 +7,10 @@
       <h1 class="title">www.bestgate.sk</h1>
     </ui-layout>
     <ui-layout class="col-xs-12">        
-      <h2 class="subtitle">Ponúkame široký sortiment vysokokvalitných výrobkov zo železa.</h2>
+      <h2 class="subtitle">Ponúkame široký sortiment vysokokvalitných výrobkov zo železa!</h2>
     </ui-layout>
     <ui-layout class="col-xs-12">
-      <div class="button--green"><router-link :to="{ name: 'domov' }">Vstúpte</router-link></div>
+      <div class="button--white"><router-link :to="{ name: 'o-nas' }">Vstúpte</router-link></div>
     </ui-layout>
     </ui-layout>
     </div>
@@ -44,7 +44,7 @@ export default {
 
 
 .body {
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 42px);
   background-image: url("/assets/img/index3.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -56,41 +56,44 @@ export default {
   font-weight: 400;
   font-size: 100px;
   color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   letter-spacing: 1px; 
   padding-top: 110px;
   margin: 20px;
-  text-decoration: underline;
 }
 
 .subtitle {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 42px;
-  color: #3B8070;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   word-spacing: 5px;
   padding-bottom: 15px;
   text-align: center;
   padding: 5px;
-  background-color: white;
-  border-radius: 10px;
-  border: 3px solid #3b8070;
+  background-color: #292C2F;
+  border-radius: 4px;
+  border: 3px solid white;
 }
 
-.button--green {
+.button--white {
   display: inline-block;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid white;
-  color: #fff;
-  background-color: #3b8070;
+  border: 1px solid #292C2F;
+  color: #292C2F;
+  background-color: white;
   text-decoration: none;
   padding: 10px 30px;
-  margin: 30px;
+  margin: 45px;
   
 }
 
-.button--green:hover {
+.button--white:hover {
   color: #fff;
-  background-color: #41B883;
+  background-color: #292C2F;
+  border-radius: 4px;
+  border: 1px solid white;
 }
 
 
