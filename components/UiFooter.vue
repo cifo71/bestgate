@@ -1,8 +1,6 @@
 <template>
  <div>
-  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
     <footer class="footer-distributed">
-
 			<div class="footer-left">
 
 				<h3>Best<span>gate</span></h3>
@@ -27,7 +25,7 @@
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>+421 940 652 833</p>
 				</div>
 
 				<div>
@@ -39,7 +37,7 @@
 			<div class="footer-right">
 				<p class="footer-company-about">
 					<span>O nás</span>
-					Ponúkame široký sortiment vysokokvalitných výrobkov zo železa. Kontaktujte nás pre viac informácií.
+					Ponúkame široký sortiment vysokokvalitných výrobkov zo železa. Kontaktujte nás pre viac informácií!
 				</p>
 
 				<div class="footer-icons">

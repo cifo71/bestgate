@@ -1,6 +1,6 @@
 module.exports = {
 
-    
+  plugins: ['~/plugins/vue-google-maps'],
   head: {
     title: 'bestgate.sk',
     meta: [
@@ -10,7 +10,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons' }
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
     ]
   },
   /*
@@ -24,6 +25,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    vendors: ['babel-polyfill'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -33,6 +35,19 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      if (!isClient) {
+        // This instructs Webpack to include `vue2-google-maps`'s Vue files
+        // for server-side rendering
+        config.externals.splice(0, 0, function (context, request, callback) {
+          if (/^vue2-google-maps($|\/)/.test(request)) {
+            callback(null, false)
+          } else {
+            callback()
+          }
+        })
+      }
     }
   }
 }
+
+

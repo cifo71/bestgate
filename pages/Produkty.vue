@@ -1,21 +1,25 @@
 <template>
-    <div>
-        <ui-header/>
-            <ui-layout container>
-                <ui-layout class="col-xs-6 col-md-3"></ui-layout>
-                <ui-layout class="col-xs-6 col-md-3"></ui-layout>
+    <div class="index">
+        <ui-menu/>
+        <div class="products">
+                <ui-layout class="col-xs-12"><h1>Produkty</h1>
+<ui-layout container>
+                </ui-layout>    
             </ui-layout>
+        </div>
         <ui-footer/>   
     </div> 
 </template>
 
 <script>
-import UiHeader from '~/components/UiHeader.vue'
+import UiLayout from '~/components/UiLayout.vue'
+import UiMenu from '~/components/UiMenu.vue'
 import UiFooter from '~/components/UiFooter.vue'
 
 export default {
   components: {
-    UiHeader,
+    UiLayout,
+    UiMenu,
     UiFooter
   }
 }
@@ -23,5 +27,9 @@ export default {
 </script>
 
 <style>
+h1{
+color: black;
+padding: 40px;
 
+}
 </style>

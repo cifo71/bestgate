@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div>
   <ui-header/>
     <div class="body">
     <ui-layout column align-center>

@@ -1,11 +1,12 @@
 <template>
-    <div class="index">
+    <div>
         <ui-menu/>
-        <div class="body">
-            <ui-layout container>
-                <ui-layout class="col-xs-12"><h1>O nás</h1>
+        <div class="about">
+           
+                <ui-layout class="col-xs-12">
 
-                </ui-layout>    
+                <ui-map/>
+              
             </ui-layout>
         </div>
         <ui-footer/>   
@@ -16,12 +17,14 @@
 import UiLayout from '~/components/UiLayout.vue'
 import UiMenu from '~/components/UiMenu.vue'
 import UiFooter from '~/components/UiFooter.vue'
+import UiMap from '~/components/UiMap.vue'
 
 export default {
   components: {
     UiLayout,
     UiFooter,
-    UiMenu
+    UiMenu,
+    UiMap
   }
 }
 
