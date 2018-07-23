@@ -39,6 +39,10 @@ export default {
   width: 100%;
   height: 42px;
 }
+
+.header-info {
+	
+}
   
 .header-info i {
 	background-color:  #33383b;
@@ -52,8 +56,17 @@ export default {
   margin: 3px;
 }
 
-h3 {
+.header h3 {
   font-size: 25px;
   padding: 9px;
+	
 }
+
+@media screen and (max-width: 860px){
+	
+.header-info {
+display: none;
+}
+}
+
 </style>

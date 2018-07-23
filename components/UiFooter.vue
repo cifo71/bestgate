@@ -28,7 +28,7 @@
 
 			<div>
 				<i class="fa fa-envelope"></i>
-				<p><a href="mailto:info@bestgate.sk">info@bestgate.sk</a></p>
+				<p>info@bestgate.sk</p>
 			</div>
 		</div>
 
@@ -53,7 +53,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font-family: bold 16px 'Open Sans';
 	padding: 55px 50px;
 	margin-top: 80px;
 }
@@ -75,7 +75,7 @@
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font: bold italic 36px 'Open Sans';
 	margin: 0;
 }
 
@@ -192,12 +192,14 @@
 	margin-bottom: 5px;
 }
 
+
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
 	.footer-distributed{
-		font: bold 14px sans-serif;
+		font-family: bold 14px 'Open Sans';
 		
 	}
 

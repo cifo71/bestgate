@@ -47,21 +47,32 @@ export default {
 
 .about-header{
 	width: 100%;
-	height: 200px;
-	background-image: url("/assets/img/index3.jpg");
+	height: 300px;
+	background-image: url("/assets/img/about.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .about-title {
+  margin:20px;
+  padding-top: 60px;
+  position:relative;
+}
 
-padding-top: 60px;
+.about-title::before {
+  content: " ";
+  background:#5383d3;
+  width:10px;
+  height:35px;
+  left:-20px;
+  position:absolute;
 }
 
 .about-text {
-padding-bottom: 25px;
-line-height: 26px;
+  padding-bottom: 25px;
+  line-height: 26px;
+
 
 }
 

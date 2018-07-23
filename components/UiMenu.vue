@@ -29,9 +29,11 @@
   display:         flex;
   align-items:     center;
   justify-content: space-between;
-  top:             200px;
+  top:             300px;
   left:            0;
-  position:        absolute;
+  border-bottom:   10px solid #5383D3;
+  
+
   
   
 
@@ -61,4 +63,7 @@
     }
   }
 }
+
+
+
 </style>
